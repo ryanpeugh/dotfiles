@@ -144,7 +144,7 @@ autocmd VimLeave * silent !stty ixon
 nnoremap & :&&<CR>
 xnoremap & :&&<CR>
 
-" Toggle fold with Backspace (Greg Hurrell uses <S-Tab>)
+" Toggle fold with Backspace key (Greg Hurrell uses <S-Tab>)
 " https://www.youtube.com/watch?v=oqYQ7IeDs0E&t=2s
 nmap <BS> za
 
@@ -153,7 +153,7 @@ noremap <Space> :
 
 " Easy expansion of the Active File Directory (Practival Vim pg. 95)
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
-"Now when we type %% on Vim’s : command-line prompt, it automatically expands to the path of the active buffer, just as though we had typed %:h <Tab> . 
+"Now when we type %% on Vimâ€™s : command-line prompt, it automatically expands to the path of the active buffer, just as though we had typed %:h <Tab> . 
 "Besides working nicely with :edit, this can come in handy with other Ex commands such as :write, :saveas, and :read.
 "Vimcasts episode on the :edit command (http://vimcasts.org/episodes/the-edit-command/)
 
@@ -272,7 +272,7 @@ map <leader>viminfo :tabe $HOME/.viminfo<cr>
 " Toggle invisibles shortcut (VimCast #1 Show invisibles)
 nnoremap <leader>ll :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
-set listchars=tab:^\ ,eol:� " ctrl-v u00ac inserts '�' (the not sign). There are no tabstops with expandtab set.
+set listchars=tab:^\ ,eol:¬ " ctrl-v u00ac inserts '¬' (the not sign). There are no tabstops with expandtab set.
 " Invisible character colors to blend with background
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
