@@ -83,6 +83,9 @@ set history=200 "Practical Vim p. 68
 set nrformats=  "treat all #'s as decimals, regardless of whether they are padded with zeros (Practical Vim p. 21)
 " makes Vim's <C-a> <C-x> commands behave as expected and not do octal math
 
+" Maximize gvim window on startup (https://vi.stackexchange.com/questions/1937/how-do-i-get-gvim-to-start-maximised-in-windows)
+autocmd GUIEnter * simalt ~x    " simulate keystrokes Alt-Space-X
+
 "---------------------------------------------------------
 " Turn on hybrid line numbering (github: jeffkreeftmeijer/vim-numbertoggle)
 " Automatic toggling between 'hybrid' and absolute line numbers
