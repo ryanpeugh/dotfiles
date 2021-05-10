@@ -16,7 +16,7 @@ syntax on
 let g:solarized_termcolors=256
 set t_Co=256
 set background=dark
-colorscheme solarized8
+silent! colorscheme solarized8
 
 " Fira Code
 set guifont=Fira_Code_Retina:h11:cANSI:qDRAFT
